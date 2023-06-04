@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/949821eebd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Ps4</title>
 </head>
@@ -13,15 +14,64 @@
         <div class="navbar">
             <img src="/ps4/images/logo.png" class="logo">
             <nav>
-                <ul>
+                <ul id="menulist">
                     <li><a href="#">Game Controller</a></li>
                     <li><a href="#">VR Accesories</a></li>
                     <li><a href="#">Media Remotes</a></li>
-                    <li><a href="#">Othersr</a></li>
+                    <li><a href="#">Others</a></li>
                 </ul>
             </nav>
-            <img src="/ps4/images/menu.png" class="icon">
+            <img src="/ps4/images/menu.png" class="icon" onclick="togglemenu()">
         </div>
+        <!-- content section -->
+        <div class="row">
+            <div class="col1">
+                <h2>PS4 V2 <br> Dualshock 4</h2>
+                <h3>Wireless Controller for plasystation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button>Buy Now <img src="/ps4/images/arrow.png" class="pic"></button>
+            </div>
+            <div class="col2">
+                <img src="/ps4/images/controller.png" class="controller">
+                <div class="color-box"></div>
+                <!-- button -->
+                <div class="add-btn">
+                    <img src="/ps4/images/add.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- socialmedia links -->
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <footer>
+            <div class="fot">
+                <p>&#169 Copyrights.All rights are reserved.</p>
+            </div>
+            </footer>
     </div>
+    <script>
+
+        var menulist = document.getElementById("menulist"); 
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+             
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "130px"
+            }
+            else{
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 </html>
